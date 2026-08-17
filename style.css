@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+/*STYLES NAV BAR*/
+
+.nomeheader{
+    display: flex;
+    color: rgb(182, 177, 173);
+}
+
+#logoheader{
+    min-width: 80px;
+    max-width: 80px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #1321336c; 
+    background-image:linear-gradient(to left,#1D242D,#21252A,#132133,
+    #1A2430,#162232);
+}
+
+.ulnav{
+    display: flex;
+    gap: 30px;
+    font-size: 1.5em;
+    list-style: none;
+    font-family: "Poppins";
+}
+
+li a:hover{
+    background-color: #393939;
+    border-radius: 5px;
+}
+
+li  a{
+    color:#bfc5b7;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.5s; 
+}
+
+/*LAYOUT GERAL DO SITE*/
+
+body{
+    background-image: url("Logos/backgroundsite.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:#fff;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+
+}
+
+/* main ocupando todo o espaço disponivel,para tacar o footer para baixo */
+
+
+main{
+    min-width: 480px;
+    max-width: auto;
+    flex: 1
+}
+
+
+h1,h2{
+   font-family: "Poppins";
+   font-weight: 700;
+   text-align: center;
+}
+
+p{
+    font: 400 1.0em "Inter";
+    text-align: justify;
+}
+
+li{
+    list-style: none;
+}
+
+
+
+/*LANDING PAGE*/
+
+.sobrenos{
+    margin: auto;
+    background-color: #fff;
+    color: #272727;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 650px;
+}
+
+
+.marcas_site{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.nm{
+    display: flex;
+    justify-content: center;
+}
+
+
+.marcas{
+    width: auto;
+    max-height: 50px;
+}
+
+/*MOUSEPADS (POR ENQUANTO)*/
+
+.h1produtos{
+    width: 40%;
+    color: #fff;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;   
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    gap: 30px;
+    margin-bottom: 30px;
+
+}
+
+.displaycards{
+    flex: 1 1 200px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    color: #132133;
+    padding: 20px;
+    font-family: inter;
+    justify-content: center;
+}
+
+.displaycards img{
+    display: block;
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+
+
+.containerinfos{
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    color: #132133;
+    font-family: Inter;
+}
+
+.mais-infos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/*FORM PAGE*/
+.formulário{  
+    background-color: white;
+    color: #132133;
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px;  
+}
+
+table{
+    border: solid 0px;
+}
+
+.buttons{
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgba(173, 171, 171, 0.452);
+    text-align: center;
+    cursor: pointer;
+}
+
+
+footer{
+    width: 100%;
+    max-width: 100%;
+    margin-top: 1em;
+    color: white;
+    font-size: 1em;
+    font-family: "inter", sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+    
+
+
+@media screen and (max-width: 500px){
+    
+    
+    .navbar{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .ulnav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobrenos{
+        width: 80%;
+    }
+
+    footer{
+        justify-content: center;
+        margin: auto;
+        padding: 1em;
+        margin-top: 1em;
+        
+        
+
+
+    }
+
+}
+
+

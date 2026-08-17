@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuantumStore</title>
+    <link rel="shortcut icon" href="Logos/QuantumStore.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<body>
+    <header class="navbar">      
+      <div class="nomeheader">
+        <h1>Quantum</h1>
+        <h1>Store</h1>
+        <img src="Logos/logo.png" id="logoheader">
+      </div>
+      <nav>
+        <ul class="ulnav">         
+          <li><a href= "Paginainicial.html">Página Inicial</a></li>
+          <li><a href="">Mouses</a></li>
+          <li><a href= "MousePads.html">Mousepads</a></li>
+          <li><a href="">Teclados</a></li>
+          <li><a href= "FaleConosco.html">Fale Conosco</a></li>
+        </ul> 
+      </nav>
+    </header>             
+    <main>
+      <section class="formulário">
+        <h1>Formulário para entrar em contato com nossa equipe:</h1>
+        <hr>
+        <form action="" method="post">
+          <table>
+            <thead>
+            </thead>
+             <tbody>
+                <tr>
+                  <td><label for="Nome">Nome completo:</label></td>
+                  <td><input type="text" name="NomeUsuario" placeholder="ex:João alves">
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="email">E-mail Particular:</label></td>
+                  <td><input type="email" name="Emailusuario" placeholder="ex:Email@gmail.com">
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="idade">Sua idade:</label></td>
+                  <td><input type="number" name="Idadeusuario "min="1" max="100">
+                </tr>
+                <tr>
+                  <td><label for="Setor">Setor de destino:</label></td>
+                  <td>
+                    <select id="Setor"name="Setor">
+                    <option value="">Escolha um setor:</option>
+                    <option value="financeiro">Financeiro</option>
+                    <option value="suporte">Suporte e garantias</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="Escolhagenero">Gênero:</label>
+                    <input type="radio"id="masculino" name="masculino" value="masculino">
+                    <label for="masculino">M</label>
+                    <input type="radio"id="feminino" name="feminino" value="feminino">
+                    <label for="feminino">F</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="msg">Digite sua dúvida:</label></td>
+                  <td><textarea id="Textodocliente"name="Textodocliente" rows="10px" cols="50px" ></textarea>
+                </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="submit" class="buttons">
+                    <input type="reset" class="buttons">
+                  </td>
+                </tr>
+            </tbody>
+          </table>
+        </form>
+      </section>
+    </main>
+
+    <footer> 
+  <script>
+
+      let nome = "Gustavo Hayashi"
+      let data_atual = "2026"
+      let tt = "@teste"
+      let fb = "@teste"
+      let ig = "@teste"
+      let lkn = "@teste"
+      let  sexo = "Masculino"
+      let  loc = "Localização - polo: Higienópolis"
+
+
+      document.write(nome + "<br>");
+      document.write("Ano - " + data_atual + "<br>");
+      document.write("twitter: " + tt + "<br>");
+      document.write("instagram: " + ig + "<br>");
+      document.write("facebook: " + fb + "<br>");
+      document.write("linkedin: " + lkn + "<br>");
+      document.write("Sexo: " + sexo + "<br>");
+      document.write(loc);
+      
+  </script>
+</footer>
+
+</html>
